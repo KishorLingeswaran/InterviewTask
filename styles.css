@@ -1,0 +1,358 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 380px;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ededed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10%;
+}
+
+.header-left i {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: rgb(72, 172, 72);
+    border: #333;
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: left;
+}
+
+.hello-admin {
+    font-size: 14px;
+    color: #555;
+    margin-right: 150px;
+}
+.hello-admin i {
+    font-size: 14px;
+    color: #f30b0b;
+  
+}
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 30%;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+
+h3 {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 5vh;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.main-content {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.header .hello-admin {
+    font-size: 14px;
+    color: #555;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.form-container {
+    border: 2px solid #ebebeb;
+    width: 60vh;
+    margin-left: 12vh;
+}
+
+.form-container h4 {
+    font-size: 16px;
+   
+}
+
+.form-container p {
+    font-size: 12px;
+    color: #555;
+    margin-top: -15px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.form-container select{
+    width: 79%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.form-container input {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.drop-zone {
+    width: 79%;
+    height: 10vh;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+.drop-zone p {
+    font-size: 16px;
+}
+
+.drop-zone:hover {
+    background-color: #f1f1f1;
+}
+
+.form-container button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top:15px;
+    width: 15vh;
+    margin-bottom: 5px;
+}
+
+.form-container button:hover {
+    background-color: #218838;
+}
+
+.report-list {
+    padding: 20px;
+  
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 5vh;
+}
+
+.report-list h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+}
+
+.report-list table {
+    width: 100%;
+    
+}
+
+.report-list table th {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.report-list table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ededed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+   text-align: center;
+    z-index: 1000;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        margin-left: 260px; 
+    }
+
+    .header-left {
+        margin-left: 5%;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    h3 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 0;
+    }
+
+    .menu {
+        margin-left: 0;
+    }
+
+    .menu li {
+        margin-bottom: 5px;
+    }
+
+    .header-left {
+        margin-left: 0;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-left {
+        font-size: 12px;
+    }
+
+    .header-right {
+        font-size: 12px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .report-list table th, .report-list table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .drop-zone p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-left {
+        font-size: 10px;
+    }
+
+    .header-right {
+        font-size: 10px;
+    }
+
+    .menu li a {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-container button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .report-list table th, .report-list table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .drop-zone p {
+        font-size: 12px;
+    }
+}

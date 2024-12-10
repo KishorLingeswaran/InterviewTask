@@ -1,0 +1,131 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    background-color: #ededed;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10%;
+}
+
+.header-left i {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: rgb(72, 172, 72);
+    border: #333;
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: left;
+}
+
+.hello-admin {
+    font-size: 14px;
+    color: #555;
+    margin-right: 150px;
+}
+.hello-admin i {
+    font-size: 14px;
+    color: #f30b0b;
+  
+}
+
+.login-container {
+    margin-top: 25vh; 
+    margin-bottom: 80px; 
+    width: 400px;
+    background-color: #ededed;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+   
+}
+
+.login-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.login-container label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ededed;
+}
+
+.login-container button {
+    width: 35%;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container button:hover {
+    background-color: #218838;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ededed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+}
